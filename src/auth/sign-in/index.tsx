@@ -1,7 +1,12 @@
+import { SignIn } from "@clerk/clerk-react";
 import React from "react";
 
-const SignIn = () => {
-  return <div>Sign In page</div>;
+const SignInPage = () => {
+  return (
+    <div className=" flex items-center justify-center h-screen">
+      <SignIn />
+    </div>
+  );
 };
 
-export default SignIn;
+export default SignInPage;
