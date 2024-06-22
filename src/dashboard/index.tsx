@@ -1,4 +1,3 @@
-import React from "react";
 import AddResume from "./components/AddResume";
 
 const Dashboard = () => {

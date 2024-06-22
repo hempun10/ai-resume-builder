@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import { UserButton, useUser } from "@clerk/clerk-react";
 
 const Header = () => {
-  const { user, isSignedIn } = useUser();
+  const { isSignedIn } = useUser();
   return (
     <div className=" p-3 px-5 flex justify-between shadow-md items-center">
       <img src="/vite.svg" width={50} height={50} />

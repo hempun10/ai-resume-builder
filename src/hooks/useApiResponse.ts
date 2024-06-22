@@ -13,8 +13,9 @@ const useApiResponse = () => {
     try {
       const result = await apiCall();
       toast({
-        title: successMessage,
-        description: "Operation successful",
+        title: "Success",
+        description: successMessage,
+        variant: "success",
       });
       return result;
     } catch (error) {

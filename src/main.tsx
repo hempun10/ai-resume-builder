@@ -7,6 +7,7 @@ import HomePage from "./home/index.tsx";
 import Dashboard from "./dashboard/index.tsx";
 import { ClerkProvider } from "@clerk/clerk-react";
 import SignInPage from "./auth/sign-in/index.tsx";
+import EditResumePage from "./dashboard/resume/[resumeId]/edit/index.tsx";
 
 // Import your publishable key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/dashboard/resume/:resumeId/edit",
+        element: <EditResumePage />,
       },
     ],
   },

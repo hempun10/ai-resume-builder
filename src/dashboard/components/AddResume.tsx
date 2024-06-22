@@ -1,13 +1,11 @@
 import { Plus } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import ResumeAddModal from "./ResumeAddModal";
 import { v4 as uuidv4 } from "uuid";
 import { useUser } from "@clerk/clerk-react";
-import { useToast } from "@/components/ui/use-toast";
 import useApiResponse from "@/hooks/useApiResponse";
 import GlobalApi from "@/service/ApiMethod";
 const AddResume = () => {
-  const { toast } = useToast();
   const [openDialog, setOpenDialog] = useState(false);
   const [resumeName, setResumeName] = useState("");
   const { user } = useUser();
